@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EPS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- HERO IMG  -->
+
+  <div class="hero-container">
+    <div class="hero-img">
+      <img
+        src="https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+        alt="clean water image" />
+    </div>
+  </div>
+
+  <!-- NAV CONTAINER  -->
+
+  <div class="nav-container">
+    <!-- .class>span+ul>li*3>a  -->
+    <div class="top-bar">
+      <ul>
+        <li>
+          <a href="tel:123-456-7890"><i class="fa-solid fa-phone"></i><span class="top-contact-info"
+              id="phone-number">(123)456-7890</span></a>
+        </li>
+        <li>
+          <a href="mailto:notarealemail@gmail.com"><i class="fa-solid fa-envelope"></i><span class="top-contact-info"
+              id="email-address">eps@epsmidwest.com</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- nav>.logo+.toggle+ul.menu>li*4>a -->
+
+    <nav>
+      <div class="logo">
+        <a class="logo-name" href="index.html"><img src="images/logo.jpg" alt="logo" />
+          <div id="nav-company-name">
+            <div>Environmental</div>
+            <div>& Process</div>
+            <div>Systems</div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-bars" id="menu-bars">
+        <!-- class = toggle (in video ) -->
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+      </div>
+
+      <ul class="menu">
+        <li><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <u><a href="contact.html">Contact</a></u>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- NAV END -->
+  <div class="current-page-container">
+    <a name="form"></a>
+    <div class="current-page-wrapper">
+      <em> Contact </em>
+    </div>
+  </div>
+  <!-- ALL SECTIONS WRAPPER -->
+  <div class="all-sections-container">
+    <div class="all-about-you"></div>
+    <div class="contact-container">
+      <div class="contact-container-overlay">
+        <div class="contact-section">
+          <form method="POST" name="contactForm" action="https://formsubmit.co/oliverscott14@gmail.com">
+            <h2 class="form-header">Give us a shout</h2>
+            <input type="text" placeholder="Name*" name="name" id="name" required />
+            <input type="email" name="email" id="email" placeholder="Email Address*" required />
+
+            <textarea name="message" placeholder="Message*" id="mesage" cols="30" rows="10"></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thankyou.html" />
+            <input type="hidden" name="_subject" value="New Email From Website!" />
+            <div class="submit-btn">
+              <button id="submit-btn" type="submit" value="Send Form">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-section">
+          <section class="info-card contact-info-card">
+            <h3 class="h3-center">We want to hear from you!</h3>
+            <div class="separator-line"></div>
+            <p>Submit a message, call, or email</p>
+            <p>We service a variety of company sizes and project types! Lets talk and see how we can help you!</p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="products.html#products">our products</a></li>
+              <li><a href="services.html">our services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="about.html#faq">FAQ</a></li>
+              <li><a href="#">our jobs</a></li>
+              <li><a href="#">our affiliates</a></li>
+
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="contact.html#form">form</a></li>
+              <li> <a href="mailto:notarealemail@gmail.com"><span id="email-address">eps@epsmidwest.com</span></a></li>
+              <li><a href="tel:123-456-7890"><span id="phone-number">(123)456-7890</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </div>
+  <!-- END ALL SECTIONS CONTAINER  -->
+
+  <!-- BACKGROUND IMAGE -->
+  <div class="background-img-container">
+    <div class="background-img-matte">
+      <!-- <div class="thin-img-matte"></div> -->
+      <img
+        src="https://media.istockphoto.com/photos/water-purification-plant-from-above-picture-id1176976078?b=1&k=20&m=1176976078&s=170667a&w=0&h=3EfqdxkOvRdWafPJmPz5u8C7GNF5bqTkPmdjAKNY2Qw="
+        ); alt="checking water levels" />
+    </div>
+  </div>
+
+
+  <!-- END BODY -->
+  <script src="script.js"></script>
+</body>
+
+</html>
