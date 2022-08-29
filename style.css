@@ -253,19 +253,24 @@ nav a:hover {
 .ticker-container {
   position: relative;
   z-index: 1;
+  margin-top: 40px;
 }
 
 .ticker-wrapper {
-  background-color: rgba(255, 255, 255, 0.374);
+  /* background-color: rgba(255, 255, 255, 0.374); */
   display: flex;
   justify-content: center;
   overflow: hidden;
+  border: 16px solid rgba(255, 255, 255, 0.626);
+  border-left: none;
+  border-right: none;
+  z-index: 2;
 }
 
 .ticker-transition {
   display: flex;
   /* transform: translateX(-120rem); */
-  animation: tickerAnimation 30s linear infinite;
+  animation: tickerAnimation 40s linear infinite;
   /* position: relative; */
 }
 
@@ -275,12 +280,12 @@ nav a:hover {
 
 .ticker-item {
   margin: auto 0px;
-  padding: 50px;
+  padding: 10px 40px;
 }
 
 .ticker-item img {
   max-width: 250px;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 @keyframes tickerAnimation {
@@ -308,8 +313,8 @@ nav a:hover {
 
 .offer-wrapper {
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.357);
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 140px;
   margin: 40px;
   border-radius: 10px;
   transition: 0.4s;
@@ -427,8 +432,8 @@ nav a:hover {
   text-align: center;
   padding: 0px 0px;
   color: rgb(255, 255, 255);
-  margin: 10px 40px 10px 40px;
-  font-size: 18px;
+  margin: 10px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 2em;
 }
@@ -1053,7 +1058,8 @@ form textarea {
 /** Thank you */
 .thanks-container {
   width: 50%;
-  height: 310px;
+  min-height: 310px;
+  height: auto;
   position: relative;
   z-index: 1;
   display: flex;
@@ -1138,11 +1144,16 @@ form textarea {
     width: 100%;
   }
   .info-card ul {
-    font-size: 12px;
-    padding: 10px 0 10px 0;
+    left: 0;
+    padding-left: 0;
+  }
+  .info-card ul li {
+    font-size: 18px;
+    position: relative;
+    left: 0;
   }
   .info-card ul i {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .contact-section {
@@ -1154,6 +1165,11 @@ form textarea {
 
   .map-img-wrapper img {
     width: 90%;
+  }
+  .about-card {
+    width: 100%;
+    padding: 0;
+    /* background-color: black; */
   }
 
   .about-card p {
@@ -1212,5 +1228,8 @@ form textarea {
     font-size: 14px;
     padding: 20px;
     word-spacing: normal;
+  }
+  .thanks-container {
+    width: 90%;
   }
 }
